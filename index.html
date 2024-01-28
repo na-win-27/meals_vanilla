@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meals</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <nav>
+
+        <div class="heading">MEAL<b class="head-s">'</b>S</div>
+        <div class="search-box">
+            <form id="search" onkeyup="showMealList()">
+                <input type="search" name="meals" id="search-input" placeholder="Enter meal name">
+            </form>
+            <span> <i class="fa fa-search"></i></span>
+        </div>
+
+
+        <ol>
+            <li><a href="">Home</a></li>
+            <li><a onclick="showFavMealList()">My Favourites</a></li>
+        </ol>
+
+
+
+    </nav>
+
+
+    <main>
+
+
+        <div class="wrapper">
+            <div class="cardContainer" id="cardContainer">
+
+
+
+                  
+
+
+
+            </div>
+
+
+            <div class="more" id="more">
+                
+
+                    <div>
+                        <ul class="food-list">
+                          
+                          </ul>
+                    </div>
+
+                  
+            </div>
+
+            
+        </div>
+
+    </main>
+<script src="./script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #000000;
+    color: #fff;
+}
+
+
+nav{
+    color: #ffff;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    padding: auto;
+    align-items: center;
+}
+
+nav .heading{
+    margin-right: 20px;
+    font-weight: 800;
+    font-size: 35px;
+    cursor: pointer;
+    color: #E50914;
+ 
+    text-transform: capitalize;
+}
+
+nav .heading .head-s{
+   
+    color: #fff;
+}
+
+nav ol{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: auto 10px;
+
+}
+
+nav ol li a{
+    margin: 0 5px;
+    font-size: 20px;
+    padding: 5px 10px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #ffff;
+}
+
+nav ol li:hover a{
+    background-color: #E50914;
+    color: #ffff;
+}
+
+nav .search-box{
+    display: flex;
+    height: 35px;
+    margin: auto 0;
+    line-height: 35px;
+    align-items: center;
+}
+
+nav .search-box input{
+    height: 100%;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    background-color: #000000;
+    color: #fff;
+    padding: 0 10px;
+    width: 350px;
+}
+
+nav .search-box span{
+    color: #fff;
+    font-size: 20px;
+    background: #000000;
+    height: 100%;
+    text-align: center;
+    position: relative;
+    padding: 8px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+nav .search-box span::after{
+    background: #E50914;
+    height: 100%;
+    width: 0%;
+    position: absolute;
+    content: '';
+    top:0;
+    left: 0;
+    z-index: -1;
+    transition: 0.3s;
+}
+
+nav .search-box span:hover::after{
+    width: 100%;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: space-between;
+}
+
+.card{
+    width: 300px;
+    height: 400px;
+    /* background-color: #E50914; */
+    padding: 2rem 1rem;
+    margin: 10px;
+    display: flex;
+    position: relative;
+    align-items: flex-end;
+    box-shadow: 0px 2px 5px #E50914;
+    transition: 0.5s ease-in-out;
+ 
+}
+
+.card:hover{
+    transform:  translateY(-20px);
+}
+
+
+.card::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    transition: 0.8s all;
+    opacity: 0;
+}
+
+.card:hover::before{
+    opacity: 1;
+}
+
+.card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top:0;
+    left: 0;
+}
+
+.card .info{
+    position: relative;
+    z-index: 3;
+    color: #000000;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: 0.2s ease-in-out;
+    margin-bottom: 5px;
+}
+
+.card:hover .info{
+    opacity: 1;
+}
+
+.card .info .btn{
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    margin-top: 15px;
+    background-color: #E50914;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+
+}
+
+.card .info .btn:hover{
+   
+    background-color: #000000;
+}
+
+
+
+
+main{
+    max-width: 80%;
+    position: relative;
+    left: 10vw;
+}
+
+.cardContainer{
+    margin-top: 10vh;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+}
+
+.more{
+    margin-top: 10vh;
+    margin-left: 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.food-list {
+    list-style-type: none;
+    padding: 0;
+    max-width: 20vw;
+  }
+
+  .food-item {
+    display: flex;
+    justify-content: space-between;
+    background-color:#363737;
+    color: #E50914;
+    margin: 5px 0;
+    width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+
+  .read-img{
+    height: 200px;
+    width: 200px;
+  }
+
+  .fav-rem{
+   
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    margin-top: 15px;
+    background-color: #E50914;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+  }
+
+  
+  .fav-rem:hover{
+  
+    background-color: #000000;
+    color: #fff;
+
+  }
